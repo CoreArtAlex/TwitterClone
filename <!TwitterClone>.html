@@ -6,6 +6,7 @@
         <meta name="author" content="Alejandro Guerra">
         <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/fda1a9aa30.js" crossorigin="anonymous"></script>
         <title>Twitter Clone</title>
         <style>
             body{
@@ -53,6 +54,24 @@
                 grid-row-start: 1;
                 grid-row-end: span 12;
             }
+
+            .search-box-center{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: darkgray;
+                height: 40px;
+            }
+
+            .search-box-aside{
+                position: absolute;
+                top: 10%;
+                left: 82%;
+                transform: translate(-50%,-50%);
+                background: darkgray;
+                height: 40px;
+            }
         </style>
     </head>
 
@@ -61,9 +80,8 @@
             <!--Left side Block of the page-->
             <div class="header1">
                 <div class="aside-left1">
-                    <img src="" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
                     <a href="https://twitter.com/home">
-                        <img src="/Desktop/TwitterLogo.png" alt="Twitter Home Screen">
+                        <i class="fa-solid fa-crow"></i>
                     </a>
                 </div>
                 <div class="aside-left2">
@@ -97,8 +115,10 @@
             </div>
             <!--Center Block of the Page-->
             <div class="header2">
-                <div class="center1">
-                    Search Box
+                <div class="center1 search-box-center">
+                    <input type="search-text" name="" placeholder="Home">
+                    <a class="search-btn" href="#"></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="center2">
                     <div class="container-center2">
@@ -116,8 +136,10 @@
             </div>
             <!--Right Side Block of the Page-->
             <div class="header3">
-                <div class="aside-right1">
-                    Search Box
+                <div class="aside-right1 search-box-aside">
+                    <input type="search-text" name="" placeholder="Search">
+                    <a class="search-btn" href="#"></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="aside-right2">
                     <div class="container-aside-right1">
