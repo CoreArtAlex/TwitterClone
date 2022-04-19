@@ -17,7 +17,7 @@
 
             .container{
                 width: 100vw;
-                height: 100vh;
+                height: 120vh;
                 background-color: rgb(233, 241, 245);
                 border: 2px solid rgb(140, 142, 146);
 
@@ -79,9 +79,11 @@
                 top: 10%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-                background: rgb(233, 241, 245);
+                background: rgb(233, 241, 245, 0.2);
                 height: 40px;
                 width: max-content;
+                max-width: 500px;
+                align-items: center;
             }
 
             .search-box-aside{
@@ -90,9 +92,19 @@
                 top: 10%;
                 left: 82%;
                 transform: translate(-50%,-50%);
-                background: rgb(233, 241, 245);
+                background: rgb(233, 241, 245, 0.2);
                 height: 40px;
                 width: max-content;
+                max-width: 500px;
+                align-items: center;
+            }
+
+            .search-bar input{
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 24px, 20px;
             }
 
             .search-button{
@@ -123,6 +135,10 @@
                 float: right;
                 height: 40px;
                 width: 40px;
+            }
+
+            .aside-right-footer{
+                font-size: smaller;
             }
             
         </style>
@@ -180,12 +196,6 @@
                     </a>
                 </div>
                 <div class="aside-left9">
-                    <a>
-                        <i class="fa-solid fa-comment-dots"></i>
-                        More...
-                    </a>
-                </div>
-                <div class="aside-left10">
                     <button class="tweet-button" onclick="url">
                         <i class="fa-solid fa-comment"></i>
                     </button>
@@ -194,7 +204,7 @@
             <!--Center Block of the Page-->
             <div class="center1 search-box-center">
                 <form action="https://twitter.com/explore" method="get" class="search-bar">
-                    <input type="search-text" name="" placeholder="Home">
+                    <input type="search-text" name="q" placeholder="Home">
                     <button class="search-button">
                         <a href="#"></a>
                         <i class="fa-solid fa-burst"></i>
@@ -231,7 +241,7 @@
             <!--Right Side Block of the Page-->
             <div class="aside-right1 search-box-aside">
                 <form action="https://www.google.com/search" method="get" class="search-bar">
-                    <input type="search-text" name="" placeholder="Search">
+                    <input type="search-text" name="q" placeholder="Search">
                     <button class="search-button">
                         <a href="#"></a>
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -304,8 +314,7 @@
                     <a href="https://twitter.com/en/privacy">Privacy Policy</a>
                     <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookie Policy</a>
                     <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">Ads Info</a>
-                    <a>More...</a>
-                    <a>Registered Brand</a>
+                    <p>&copy; 2022 CoreArtAlex,Inc</p>
                 </div>
             </div>
         </div>
